@@ -2,19 +2,35 @@
 
 ## Key Concepts
 - **Problem Statement**:  
-  Solve the overdetermined system $$ A\mathbf{x} \approx \mathbf{b} $$ where $$ A \in \mathbb{R}^{m \times n} $$ with $$ m > n $$.
+  Solve the overdetermined system
+
+$$
+A\mathbf{x} \approx \mathbf{b}
+$$
+
+  where
+
+$$
+A \in \mathbb{R}^{m \times n}
+$$
+
+  with
+
+$$
+m > n
+$$
 
 - **Normal Equations**:  
 
-  $$
-  A^T A \mathbf{x} = A^T \mathbf{b}
-  $$
+$$
+A^T A \mathbf{x} = A^T \mathbf{b}
+$$
   
   The solution minimizes
 
-  $$
-  \|A\mathbf{x} - \mathbf{b}\|^2
-  $$
+$$
+\|A\mathbf{x} - \mathbf{b}\|^2
+$$
 
 ## Derivation Methods
 1. **Calculus Approach**:
@@ -29,7 +45,29 @@ $$
 
 2. **Projection Approach**:
 
-- Find $$ \mathbf{x} $$ such that $$ A\mathbf{x} $$ is the orthogonal projection of $$ \mathbf{b} $$ onto $$ \text{Col}(A) $$
+- Find
+
+$$
+\mathbf{x}
+$$
+
+such that
+
+$$
+A\mathbf{x}
+$$
+
+is the orthogonal projection of
+
+$$
+\mathbf{b}
+$$
+
+onto
+
+$$
+\text{Col}(A)
+$$
 
 ## Examples
 
