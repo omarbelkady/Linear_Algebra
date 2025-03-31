@@ -1,31 +1,59 @@
-# Eigenvalues and Eigenvectors  
-## Key Concepts  
+# 4. Eigenvalues and Eigenvectors
+
+## 4.1 Key Concepts
+
 - **Definition**:  
-  For a square matrix \(A\), \(\lambda\) is an eigenvalue and \(\mathbf{v}\) is an eigenvector if:  
-  \[
-  A\mathbf{v} = \lambda \mathbf{v}
-  \]  
-- **Characteristic Equation**:  
-  \[
-  \det(A - \lambda I) = 0
-  \] <button class="citation-flag" data-index="4"><button class="citation-flag" data-index="6">.  
+  For a square matrix \( A \), \( \lambda \) is an eigenvalue and \( \mathbf{v} \) is an eigenvector if:
 
-## Properties  
-- Eigenvectors of distinct eigenvalues are linearly independent.  
-- Trace = Sum of eigenvalues, Determinant = Product of eigenvalues.  
+$$
+A\mathbf{v} = \lambda \mathbf{v}
+$$
 
-## Example  
-**Problem**: Find eigenvalues of \(A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}\).  
-1. Characteristic equation:  
-   \[
-   \det\left(\begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}\right) = \lambda^2 - 7\lambda + 10 = 0
-   \]  
-   Roots: \(\lambda_1 = 5\), \(\lambda_2 = 2\).  
+- **Characteristic Equation**:
 
-## Applications  
-- **PCA**: Dimensionality reduction in data science <button class="citation-flag" data-index="4">.  
-- **Quantum Mechanics**: Energy levels of particles <button class="citation-flag" data-index="6">.  
+$$
+\det(A - \lambda I) = 0
+$$
 
-## Exercises  
-1. Find eigenvalues of \(B = \begin{pmatrix} 2 & 7 \\ -1 & -6 \end{pmatrix}\).  
-   **Solution**: \(\lambda = -5, 1\).  
+## 4.2 Properties
+- Eigenvectors corresponding to distinct eigenvalues are linearly independent
+- **Trace** = Sum of eigenvalues
+- **Determinant** = Product of eigenvalues
+
+## 4.3 Example
+**Problem**: Find eigenvalues of
+
+$$
+A = \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix}
+$$
+
+1. Solve the characteristic equation:
+
+$$
+\det\begin{bmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{bmatrix} = (4-\lambda)(3-\lambda) - 2 = \lambda^2 - 7\lambda + 10 = 0
+$$
+
+2. Eigenvalues:
+
+$$
+\lambda_1 = 5, \lambda_2 = 2
+$$
+
+---
+
+## 4.4 Applications
+- **Principal Component Analysis (PCA)**: Dimensionality reduction in data science
+- **Quantum Mechanics**: Energy levels of quantum systems
+
+## 4.5 Exercises
+1. Find eigenvalues of
+
+$$
+B = \begin{bmatrix} 2 & 7 \\ -1 & -6 \end{bmatrix}
+$$  
+
+**Solution**:
+
+$$
+\lambda = -5, 1
+$$
