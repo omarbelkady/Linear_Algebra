@@ -1,18 +1,63 @@
-# Matrix Factorizations (LU, QR, Cholesky)  
-## Key Concepts  
-- **LU Decomposition**: \(A = LU\) (lower-upper triangular) <button class="citation-flag" data-index="8">.  
-- **QR Decomposition**: \(A = QR\) (orthogonal \(Q\), upper triangular \(R\)).  
-- **Cholesky Decomposition**: \(A = LL^T\) for symmetric positive definite \(A\).  
+# Matrix Factorizations (LU, QR, Cholesky)
 
-## Example: QR via Gram-Schmidt  
-For \(A = \begin{pmatrix} 1 & 1 \\ 1 & 0 \\ 1 & 1 \end{pmatrix}\):  
-1. Orthogonalize columns to get \(Q\).  
-2. \(R = Q^T A\).  
+## Key Concepts
 
-## Applications  
-- **Numerical Solvers**: LU for solving \(A\mathbf{x} = \mathbf{b}\).  
-- **Optimization**: Cholesky in quadratic programming.  
+### **LU Decomposition**
 
-## Exercises  
-1. Compute Cholesky decomposition of \(\begin{pmatrix} 4 & 2 \\ 2 & 10 \end{pmatrix}\).  
-   **Solution**: \(L = \begin{pmatrix} 2 & 0 \\ 1 & 3 \end{pmatrix}\).  
+The LU decomposition expresses a matrix as the product:
+
+$$
+A = LU
+$$
+
+where:
+- `L` is a lower triangular matrix (with 1s on the diagonal in Doolittle's version)
+- `U` is an upper triangular matrix
+
+LU decomposition is useful for solving systems of equations using forward and backward substitution.
+
+---
+
+### **QR Decomposition**
+
+The QR decomposition expresses a matrix as:
+
+$$
+A = QR
+$$
+
+where:
+- `Q` is an orthogonal (or orthonormal) matrix, i.e., \( Q^T Q = I \)
+- `R` is an upper triangular matrix
+
+QR is often computed via the Gram-Schmidt process or Householder reflections. It's especially useful for solving least squares problems.
+
+---
+
+### **Cholesky Decomposition**
+
+Used for symmetric, positive definite matrices:
+
+$$
+A = LL^T
+$$
+
+where:
+- `L` is a lower triangular matrix
+- `L^T` is its transpose
+
+Cholesky is more efficient than LU for symmetric positive definite matrices and is widely used in optimization and statistics.
+
+---
+
+## Example: QR via Gram-Schmidt
+
+Let:
+
+$$
+A = \begin{bmatrix}
+1 & 1 \\
+1 & 0 \\
+1 & 1
+\end{bmatrix}
+$$
