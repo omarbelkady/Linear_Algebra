@@ -1,19 +1,32 @@
-# Inner Product Spaces  
-## Key Concepts  
+# Inner Product Spaces
+
+## Key Concepts
+
 - **Inner Product**: Generalizes the dot product:  
-  \(\langle \mathbf{u}, \mathbf{v} \rangle\) satisfies linearity and symmetry <button class="citation-flag" data-index="8">.  
-- **Induced Norm**: \(\|\mathbf{u}\| = \sqrt{\langle \mathbf{u}, \mathbf{u} \rangle}\).  
+  `<u, v>` satisfies linearity and symmetry.
 
-## Example  
-In \(\mathbb{P}_2\) (polynomials of degree ≤2):  
-\[
-\langle p, q \rangle = \int_{-1}^1 p(x)q(x) \, dx
-\]  
+- **Induced Norm**:  
+  `||u|| = sqrt(<u, u>)`
 
-## Applications  
-- **Quantum Mechanics**: Bra-ket notation.  
-- **Signal Processing**: Energy of signals.  
+---
 
-## Exercises  
-1. Compute \(\langle x^2, x+1 \rangle\) in \(\mathbb{P}_2\).  
-   **Solution**: \(\frac{4}{3}\).  
+## Example
+
+In P₂ (polynomials of degree ≤ 2):  
+`<p, q> = ∫_{-1}^1 p(x)q(x) dx`
+
+---
+
+## Exercises
+
+1. Compute `<x², x+1>` in P₂:
+
+<x², x+1> = ∫{-1}^1 x²(x+1) dx
+= ∫{-1}^1 (x³ + x²) dx
+= ∫{-1}^1 x³ dx + ∫{-1}^1 x² dx
+= 0 (x³ is odd) + 2∫₀¹ x² dx
+= 2 * [x³ / 3]₀¹
+= 2/3
+
+
+Final Answer: `2/3`
